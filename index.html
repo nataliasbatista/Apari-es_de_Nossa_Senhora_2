@@ -99,8 +99,8 @@ h2{font-size:clamp(29px,8vw,40px);line-height:1.1;letter-spacing:-.02em;margin:0
 <p class="lead">Se você já conhece <strong>Fátima, Lourdes e Guadalupe</strong>, este e-book foi feito para levar você além: são <strong>46 aparições</strong> apresentadas com contexto, localização, videntes, santuários e representações em aquarela.</p>
 <div class="microproof-box"><div class="proof-head">Dentro do e-book</div><ul class="microproof"><li>46 aparições</li><li>Mapas de localização</li><li>Videntes</li><li>Santuários</li><li>Representações em aquarela</li></ul></div>
 <div class="price-row"><span class="old">R$47,00</span><span class="price">R$19,90</span><span class="launch">lançamento</span></div>
-<a class="btn" href="https://pay.hotmart.com/T107757393V" rel="noopener" target="_blank" data-track-cta="hero" data-track-label="Quero conhecer as 46 aparições">Quero conhecer as 46 aparições</a>
-<div class="helper">E-book digital • Compra processada pela Kiwify</div>
+<a class="btn" href="https://pay.hotmart.com/T107757393V" data-track-cta="hero" data-track-label="Quero conhecer as 46 aparições">Quero conhecer as 46 aparições</a>
+<div class="helper">E-book digital • Pagamento seguro processado pela Hotmart</div>
 </div>
 <div class="book-stage"><img alt="Mockup do e-book As Aparições de Nossa Senhora" fetchpriority="high" src="ebook.png"/></div>
 </div>
@@ -158,7 +158,7 @@ h2{font-size:clamp(29px,8vw,40px);line-height:1.1;letter-spacing:-.02em;margin:0
 </div>
 </section>
 <section class="cta-band" id="cta-meio" data-track-section="cta_meio">
-<div class="wrap cta-flex"><div><h3>46 aparições. Diferentes países. Uma viagem mariana.</h3><p>Descubra histórias que talvez você ainda não conheça.</p></div><a class="btn" href="https://pay.hotmart.com/T107757393V" rel="noopener" target="_blank" data-track-cta="meio" data-track-label="Quero explorar o e-book">Quero explorar o e-book</a></div>
+<div class="wrap cta-flex"><div><h3>46 aparições. Diferentes países. Uma viagem mariana.</h3><p>Descubra histórias que talvez você ainda não conheça.</p></div><a class="btn" href="https://pay.hotmart.com/T107757393V" data-track-cta="meio" data-track-label="Quero explorar o e-book">Quero explorar o e-book</a></div>
 </section>
 <section class="offer" id="oferta" data-track-section="oferta">
 <div class="wrap">
@@ -172,8 +172,8 @@ h2{font-size:clamp(29px,8vw,40px);line-height:1.1;letter-spacing:-.02em;margin:0
 <div class="product"><img alt="Bônus Calendário Mariano 2027" loading="lazy" src="bonus_calendario.webp"/><small>Bônus</small><strong>Calendário Mariano 2027</strong></div>
 </div>
 <div class="offer-price"><span class="old">De R$47,00</span><div class="big">R$19,90</div><div class="note">condição especial de lançamento</div></div>
-<a class="btn" href="https://pay.hotmart.com/T107757393V" rel="noopener" target="_blank" data-track-cta="oferta" data-track-label="Quero receber meu e-book">Quero receber meu e-book</a>
-<div class="helper">Acesso digital • Pagamento processado pela Kiwify</div>
+<a class="btn" href="https://pay.hotmart.com/T107757393V" data-track-cta="oferta" data-track-label="Quero receber meu e-book">Quero receber meu e-book</a>
+<div class="helper">Acesso digital • Pagamento seguro processado pela Hotmart</div>
 </div>
 </div>
 </section>
@@ -189,12 +189,17 @@ lb.querySelector('button').addEventListener('click',closeLb);lb.addEventListener
 <script>
 /* ==============================================================
    RASTREAMENTO DO FUNIL — As Aparições de Nossa Senhora
-   1) Crie um projeto gratuito no Microsoft Clarity.
-   2) Cole o ID do projeto abaixo em CLARITY_PROJECT_ID.
-   Enquanto o ID estiver vazio, a página funciona normalmente,
-   mas o Clarity não recebe os dados.
+
+   O rastreamento ativo e principal é feito pelos parâmetros UTM
+   enviados nos 3 botões para o Hotmart Analytics:
+   - cta_hero
+   - cta_meio
+   - cta_oferta
+
+   O Microsoft Clarity é opcional. Para ativá-lo, crie um projeto
+   gratuito no Clarity e informe somente o ID abaixo.
    ============================================================== */
-const CLARITY_PROJECT_ID = ""; // EX.: "abc123xyz" — cole somente o ID
+const CLARITY_PROJECT_ID = ""; // Opcional: informe o ID do projeto Clarity
 
 // Camada de eventos pronta para GA4 / Google Tag Manager, caso seja instalada depois.
 window.dataLayer = window.dataLayer || [];
